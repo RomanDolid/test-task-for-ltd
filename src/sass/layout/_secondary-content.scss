@@ -1,0 +1,268 @@
+.secondary-content {
+    background-color: $background-secondary;
+    height: 410px;
+    padding-left: 31px;
+    padding-right: 29px;
+    transform: matrix(1, 0, 0, 1, 0, -64);
+   
+  
+    @include for-size(tablet) {       
+        background-color: transparent;
+      height: 310px;
+      min-width: 1307px;
+      padding-left: 135px;
+      padding-right: 135px;
+    }
+  
+    @include for-size(desktop) {      
+        background-color: transparent;
+        right: 0;
+      height: 310px;
+      min-width: 1546px;
+      padding-left: 374px;
+      padding-right: 374px;
+    }
+
+
+  &-container {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 316px;
+    height: 100%;
+  
+    @include for-size(tablet) {
+        top: -310px;
+        background-color: $background-secondary;
+        max-width: 1172px;
+        // padding-top: 133px;
+    }
+  
+    @include for-size(desktop) {
+        top: -310px;
+        background-color: $background-secondary;
+        max-width: 1172px;
+        // padding-top: 133px;
+    }
+  }
+}
+  .secondary-responsive-container {
+     display: none;
+  
+    @include for-size(tablet) {
+        position: relative;
+        display: flex;
+        left: -135px;
+        margin-right: 50%;
+        max-width: 450px;
+        height: 100%;
+        background-color: $background-secondary;
+    }
+  
+    @include for-size(desktop) {
+        position: relative;
+        display: flex;
+        left: -374px;
+        margin-right: 50%;
+        height: 100%;
+        background-color: $background-secondary;
+    }
+  }
+
+  .secondary-title {  
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: left;
+    letter-spacing: 0.64px;
+    color: $text-white;
+    margin: 0;
+    margin-top: 195px;
+  
+    @include for-size(tablet) {
+      margin-top: 71px;
+      font-size: 32px;
+      line-height: 39px;
+    }
+  
+    @include for-size(desktop) {
+      margin-top: 71px;
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+
+  .secondary-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.32px;
+    color: $text-white;
+    width: 190px;
+    margin-top: 48px;
+    margin-bottom: 0;
+  
+    @include for-size(tablet) {
+      position: absolute;
+      top: 118px;
+      left: 293px;
+      margin-top: 0px;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0.48px;
+      width: 217px;
+    }
+    @include for-size(desktop) {
+      position: absolute;
+      top: 118px;
+      left: 293px;
+      margin-top: 0px;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0.48px;
+      width: 217px;
+    }
+  }
+  .secondary-content-button {
+    position: absolute;
+    width: 280px;
+    height: 54px;
+    background-color: $background-button;
+    text-decoration: none;
+    color: text-white;
+    // margin-top: 38px;
+    // margin-left: 47px;
+    transform: matrix(1, 0, 0, 1, 16, 38);
+  
+    @include for-size(tablet) {
+        width: 390px;
+        height: 74px;
+        // margin-top: 124px;
+        // margin-left: 93px;
+        transform: matrix(1, 0, 0, 1, 93, 124);
+    }
+    @include for-size(desktop) {
+        width: 390px;
+        height: 74px;
+        // margin-top: 124px;
+        // margin-left: 93px;
+        transform: matrix(1, 0, 0, 1, 93, 124);
+    }
+  }
+ 
+  .secondary-content-button a{
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: $background-button;
+    text-decoration: none;
+    color: $text-black;
+    width: 280px;
+    height: 54px;
+    padding-top: 17px;
+  
+    @include for-size(tablet) {
+      font-size: 22px;
+      line-height: 27px;
+      width: 390px;
+      height: 74px;
+      padding-top: 22px;
+    }
+    @include for-size(desktop) {
+      font-size: 22px;
+      line-height: 27px;
+      width: 390px;
+      height: 74px;
+      padding-top: 22px;
+    }
+  }
+  .secondary-content-button a:hover {
+    animation: color-change-2x 2s linear infinite alternate both;
+    color: $text-white;
+    font-size: 19px;
+
+    @include for-size(tablet) {
+      font-size: 25px;
+    }
+    @include for-size(desktop) {
+      font-size: 25px;
+    }
+  }
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+
+
+  .secondary-content-icon {
+    position: absolute;
+    transform: matrix(1, 0, 0, 1, -31, 195);
+  
+    @include for-size(tablet) {
+      width: 238px;
+      height: 278px;
+      transform: matrix(1, 0, 0, 1, 0, 71);
+    }
+    @include for-size(desktop) {
+      width: 238px;
+      height: 278px;
+      transform: matrix(1, 0, 0, 1, 0, 71);
+    }
+  }
+
+  .secondary-content-photo {
+      position: absolute;
+      top: -27px;
+      right: -184px;
+      width: 464px;
+      height: 424px;
+ 
+    
+    @include for-size(tablet) {
+      top: -73px;
+      right: 0px;
+      width: 660px;
+      height: 602px;
+  }
+    @include for-size(desktop) {
+      top: -73px;
+      right: 0px;
+      width: 660px;
+      height: 602px;
+  }
+  }
+  .secondary-content-photo picture{
+    position: absolute;
+    display: block;
+    max-width: 464px;
+    max-height: 424px;
+
+    @include for-size(tablet) {
+      max-width: 660px;
+      max-height: 602px;
+  }
+    @include for-size(desktop) {
+      max-width: 660px;
+      max-height: 602px;
+  }
+  }
